@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- meta data -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- title -->
+	<title>Login Page</title>
+
+	<!-- bootstrap css library -->
+	<link rel="stylesheet" type="text/css" href="assets/library/bootstrap/css/bootstrap.min.css">
+
+	<!-- login css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/login.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4 login-box">
+				<h3>Enter Login Details</h3>
+				<form>
+					<div class="form-group">
+						<label for="Username">Username</label>
+						<div class="input-group">
+							<span class="input-group-addon" id="basic-addon1">@</span>
+							<input type="text" class="form-control" id="Username" placeholder="Username" aria-describedby="basic-addon1">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="Password">Password</label>
+						<div class="input-group">
+							<span class="input-group-addon" id="basic-addon2">
+								<span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+							</span>
+							<input type="password" class="form-control" id="Password" placeholder="Password" aria-describedby="basic-addon2">
+						</div>
+					</div>
+					
+					<button type="submit" class="btn btn-default" id="login-button">Login</button>
+					<br>
+					<a href="signup.html" class="link">Don't have an Account? Sign Up</a>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<!-- jquery -->
+	<script type="text/javascript" src="assets/library/jquery-3.6.0.min.js"></script>
+	<!-- bootstrap js library -->
+	<script type="text/javascript" src="assets/library/bootstrap/js/bootstrap.min.js"></script>
+	<!-- login js -->
+	<script type="text/javascript" src="assets/js/login.js"></script>
+</body>
+</html>

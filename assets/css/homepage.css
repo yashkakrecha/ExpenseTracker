@@ -1,0 +1,25 @@
+body, html{
+	margin: 0px;
+	padding: 0px;
+	background-color: #333647;
+	font-family: ;
+}
+
+.navbar-brand{
+	padding: 0px;
+}
+
+.glyphicon{
+	margin-right: 5px;
+}
+
+#profile-image{
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	margin-top: -3px;
+}
+
+.group-members-list input{
+	margin-bottom: 15px;
+}
