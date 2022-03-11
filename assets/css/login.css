@@ -4,14 +4,39 @@ body, html{
 	background-color: #333647;
 	font-family: ;
 }
-
-.login-box{
-	background: white;
-	border: 1px solid black;
-	border-radius: 10px;
+/*blue color navigation bar*/
+.blue-navibar{
+	background-color: #1338BE;
 }
 
-.btn{
+/*modal width fix*/
+.modal-content{
+	width: 500px;
+}
+
+.distance{
+	margin-bottom: 150px;
+}
+
+/*removing border radius of navigation bar*/
+.navbar {
+    border-radius: 0px; 
+}
+
+/*navigation bar logo image padding remove*/
+.navbar-brand{
+	padding: 0px;
+}
+
+/*brand logo size fix, color white, margin left*/
+#brand-logo{
+	height: -webkit-fill-available;
+	filter: brightness(0%) invert(100%);
+	margin-left: 10px;
+}
+
+/*ḷogin button, signup button in modal bg, color, width changes*/
+#login-button,#signup-button{
 	width: 100%;
 	margin-top: 10px;
 	margin-bottom: 15px;
@@ -19,6 +44,89 @@ body, html{
 	color: white;
 }
 
+/*navigation bar buttons padding remove*/
+.modalbtn{
+	padding: 0px;
+	background: none;
+	border: none;
+	color: white;
+}
+
+/*navigation bar buttons background remove when hover and clicked and focused*/
+.modalbtn:hover,.modalbtn:focus,.modalbtn.active.focus, .modalbtn.active:focus, .modalbtn.focus, .modalbtn:active.focus, .modalbtn:active:focus{
+	background: none;
+	border: none;
+	color: white;
+	outline: none;
+}
+
+/*form margin*/
 form{
-	margin-bottom: 15px;
+	margin-bottom: 10px;
+}
+
+/*day-night mode slider animation and curves*/
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 30px;
+	height: 17px;
+}
+.switch input { 
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 13px;
+	width: 13px;
+	left: 2px;
+	bottom: 2px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+input:checked + .slider {
+	background: none;
+    outline: 1px solid;
+}
+input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+	-webkit-transform: translateX(13px);
+	-ms-transform: translateX(13px);
+	transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 17px;
+}
+.slider.round:before {
+	border-radius: 50%;
+}
+
+/*remove hover effect from day mode navibar in anchors tag*/
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/*heading, paragraph detail*/
+.heading1, .heading2, .para-detail{
+	color: white;
 }
